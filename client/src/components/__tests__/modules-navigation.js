@@ -1,6 +1,6 @@
-import React from 'react';
-import { render, cleanup } from '../../utils/test-utils';
-import ModuleNav from '../modules-navigation';
+import React from 'react'
+import { render, cleanup } from '../../utils/test-utils'
+import ModuleNav from '../modules-navigation'
 
 const mockModule = {
   id: 'l_1',
@@ -11,7 +11,7 @@ const mockModule = {
   videoUrl: 'https://youtu.be/dlKzlksOUtU',
   topic: 'Cat-stronomy',
   length: 164,
-};
+}
 
 const mockParentTrack = {
   id: 'c_0',
@@ -34,13 +34,13 @@ const mockParentTrack = {
       length: 258,
     },
   ],
-};
+}
 
 describe('Modules Navigation View', () => {
   // automatically unmount and cleanup DOM after the test is finished.
-  afterEach(cleanup);
+  afterEach(cleanup)
 
   it('renders without error', () => {
-    render(<ModuleNav module={mockModule} track={mockParentTrack} />);
-  });
-});
+    render(<ModuleNav module={mockModule} track={mockParentTrack} />)
+  })
+})

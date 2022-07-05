@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": false,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "no-undef": 0,
+    "quotes": [2, "single"],
+    "semi": [2, "never"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

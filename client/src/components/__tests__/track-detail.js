@@ -1,6 +1,6 @@
-import React from 'react';
-import { render, cleanup } from '../../utils/test-utils';
-import TrackDetail from '../track-detail';
+import React from 'react'
+import { render, cleanup } from '../../utils/test-utils'
+import TrackDetail from '../track-detail'
 
 const mockTrack = {
   track: {
@@ -25,13 +25,13 @@ const mockTrack = {
       },
     ],
   },
-};
+}
 
 describe('Module Detail View', () => {
   // automatically unmount and cleanup DOM after the test is finished.
-  afterEach(cleanup);
+  afterEach(cleanup)
 
   it('renders without error', () => {
-    render(<TrackDetail {...mockTrack} />);
-  });
-});
+    render(<TrackDetail {...mockTrack} />)
+  })
+})

@@ -1,17 +1,17 @@
-import React from 'react';
-import '@apollo/space-kit/reset.css';
-import { colors as SKColors } from '@apollo/space-kit/colors';
-import { Global } from '@emotion/core';
+import React from 'react'
+import '@apollo/space-kit/reset.css'
+import { colors as SKColors } from '@apollo/space-kit/colors'
+import { Global } from '@emotion/core'
 
-const breakpoints = [480, 768, 992, 1200];
-export const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
+const breakpoints = [480, 768, 992, 1200]
+export const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`)
 
-export const unit = 8;
+export const unit = 8
 export const widths = {
   largePageWidth: 1600,
   regularPageWidth: 1100,
   textPageWidth: 800,
-};
+}
 export const colors = {
   primary: SKColors.indigo.base,
   secondary: SKColors.teal.base,
@@ -21,7 +21,7 @@ export const colors = {
   text: SKColors.black.base,
   textSecondary: SKColors.grey.dark,
   ...SKColors,
-};
+}
 
 const GlobalStyles = () => (
   <Global
@@ -32,7 +32,7 @@ const GlobalStyles = () => (
       body: {
         margin: 0,
         padding: 0,
-        fontFamily: "'Source Sans Pro', sans-serif",
+        fontFamily: '\'Source Sans Pro\', sans-serif',
         backgroundColor: colors.background,
         color: colors.text,
       },
@@ -66,16 +66,16 @@ const GlobalStyles = () => (
       },
     }}
   />
-);
+)
 
-export default GlobalStyles;
+export default GlobalStyles
 
-export { IconRun } from '@apollo/space-kit/icons/IconRun';
-export { IconView } from '@apollo/space-kit/icons/IconView';
-export { IconTime } from '@apollo/space-kit/icons/IconTime';
-export { IconBook } from '@apollo/space-kit/icons/IconBook';
-export { IconYoutube } from '@apollo/space-kit/icons/IconYoutube';
-export { IconArrowRight } from '@apollo/space-kit/icons/IconArrowRight';
-export { IconDoubleArrowRight } from '@apollo/space-kit/icons/IconDoubleArrowRight';
-export { ApolloIcon } from '@apollo/space-kit/icons/ApolloIcon';
-export { Button } from '@apollo/space-kit/Button';
+export { IconRun } from '@apollo/space-kit/icons/IconRun'
+export { IconView } from '@apollo/space-kit/icons/IconView'
+export { IconTime } from '@apollo/space-kit/icons/IconTime'
+export { IconBook } from '@apollo/space-kit/icons/IconBook'
+export { IconYoutube } from '@apollo/space-kit/icons/IconYoutube'
+export { IconArrowRight } from '@apollo/space-kit/icons/IconArrowRight'
+export { IconDoubleArrowRight } from '@apollo/space-kit/icons/IconDoubleArrowRight'
+export { ApolloIcon } from '@apollo/space-kit/icons/ApolloIcon'
+export { Button } from '@apollo/space-kit/Button'
