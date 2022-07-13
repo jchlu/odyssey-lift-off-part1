@@ -8,11 +8,12 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": "latest",
+    "ecmaVersion": 2020,
     "sourceType": "module"
   },
   "plugins": ["react"],
   "rules": {
+    "react/no-children-prop": 0,
     "no-undef": 0,
     "react/prop-types": 0,
     "quotes": [2, "single"],

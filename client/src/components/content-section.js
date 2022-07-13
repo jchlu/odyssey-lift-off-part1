@@ -20,5 +20,5 @@ const ContentDiv = styled.div({
   maxWidth: widths.textPageWidth,
   width: '100%',
   alignSelf: 'center',
-  backgroundColor: colors.background,
+  backgroundColor: colors.background
 })
