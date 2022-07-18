@@ -4,7 +4,10 @@ const typeDefs = gql`
   type Query {
     "Query to retrieve an array of Tracks fo display on the homepage"
     tracksForHome: [Track!]!
+    "Retrieve a single track by id"
+    track(id: ID!): Track
   }
+
   type Track {
     id: ID!
     "The Track title (required)"
@@ -17,7 +20,21 @@ const typeDefs = gql`
     length: Int
     "The number of modules in the Track"
     modulesCount: Int
+    "The number of views of the Track"
+    numberOfViews: Int
+    "The array of mudules on the Track"
+    modules: [Module!]!
   }
+
+  type Module {
+    "The module id"
+    id: ID!
+    "The title of the Module"
+    title: String!
+    "The module length in minutes"
+    length: Int
+  }
+
   "Author of a complete Track"
   type Author {
     id: ID!

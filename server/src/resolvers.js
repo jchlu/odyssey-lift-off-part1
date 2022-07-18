@@ -6,11 +6,18 @@ const resolvers = {
 
     tracksForHome: (_, __, { dataSources }) => {
       return dataSources.trackAPI.getTracksForHome()
+    },
+    // Returns a single track based on its' id
+    track: (_, { trackId }, { dataSources }) => {
+      return dataSources.trackAPI.getTrack(trackId)
     }
   },
   Track: {
     author: ({ authorId }, _, { dataSources }) => {
       return dataSources.trackAPI.getAuthor(authorId)
+    },
+    modules: ({ trackId }, _, { dataSources }) => {
+      return dataSources.trackAPI.getTrackModules(trackId)
     }
   }
 }
